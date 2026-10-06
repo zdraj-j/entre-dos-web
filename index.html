@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entre dos</title>
+<meta name="description" content="Entre dos: presupuesto compartido para dos personas que viven juntas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --fondo:#F6F4FA; --tarjeta:#FFFFFF; --texto:#1C1A24; --suave:#5E5A6B; --violeta:#5B3FB0; --lila:#ECE6FA; --borde:#E6E2EF; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo:#141219; --tarjeta:#1F1C26; --texto:#ECE9F3; --suave:#A9A4B8; --violeta:#B9A3FF; --lila:#2A2438; --borde:#2E2A37; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--fondo); color:var(--texto); font-family:Manrope, system-ui, sans-serif; line-height:1.6; }
+  main { max-width:640px; margin:0 auto; padding:56px 16px 48px; }
+  .logo { width:72px; height:72px; border-radius:18px; background:var(--lila); display:grid; place-items:center; }
+  h1 { font-size:2.2rem; margin:20px 0 4px; }
+  .lema { color:var(--suave); font-size:1.1rem; margin:0 0 32px; }
+  .tarjeta { background:var(--tarjeta); border:1px solid var(--borde); border-radius:16px; padding:20px 22px; margin-bottom:14px; }
+  .tarjeta h2 { font-size:1rem; margin:0 0 4px; color:var(--violeta); }
+  .tarjeta p { margin:0; color:var(--suave); }
+  footer { margin-top:36px; font-size:.95rem; color:var(--suave); }
+  a { color:var(--violeta); }
+</style>
+</head>
+<body>
+<main>
+  <div class="logo" aria-hidden="true">
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" style="color:var(--violeta)">
+      <circle cx="18" cy="24" r="11"/><circle cx="30" cy="24" r="11"/>
+    </svg>
+  </div>
+  <h1>Entre dos</h1>
+  <p class="lema">El presupuesto de la casa, compartido entre dos personas.</p>
+
+  <div class="tarjeta"><h2>Anotar en segundos</h2><p>Un teclado tipo calculadora en la pantalla principal para registrar cada gasto al instante.</p></div>
+  <div class="tarjeta"><h2>Gastos detectados</h2><p>Lee en el teléfono las notificaciones de compra del banco y propone el gasto para confirmarlo.</p></div>
+  <div class="tarjeta"><h2>Cuentas claras</h2><p>Categorías con tope mensual y deudas calculadas automáticamente cuando uno paga un gasto compartido.</p></div>
+  <div class="tarjeta"><h2>Sin servidores de terceros</h2><p>Los datos viven en los teléfonos y se sincronizan a través del Google Drive propio del hogar.</p></div>
+
+  <footer>
+    App de uso personal para Android.<br>
+    <a href="privacidad.html">Política de privacidad</a>
+  </footer>
+</main>
+</body>
+</html>

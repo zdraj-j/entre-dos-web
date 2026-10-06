@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad · Entre dos</title>
+<meta name="description" content="Política de privacidad de la app Entre dos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --fondo:#F6F4FA; --texto:#1C1A24; --suave:#5E5A6B; --violeta:#5B3FB0; --borde:#E6E2EF; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo:#141219; --texto:#ECE9F3; --suave:#A9A4B8; --violeta:#B9A3FF; --borde:#2E2A37; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--fondo); color:var(--texto); font-family:Manrope, system-ui, sans-serif; line-height:1.65; }
+  main { max-width:680px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:1.9rem; margin:0 0 4px; }
+  .fecha { color:var(--suave); margin:0 0 28px; }
+  h2 { font-size:1.1rem; margin:28px 0 6px; color:var(--violeta); }
+  p, li { color:var(--texto); }
+  ul { padding-left:20px; }
+  a { color:var(--violeta); }
+  footer { margin-top:36px; padding-top:16px; border-top:1px solid var(--borde); color:var(--suave); font-size:.95rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad de Entre dos</h1>
+  <p class="fecha">Vigente desde el 5 de octubre de 2026</p>
+
+  <p>Entre dos es una app para Android con la que dos personas que viven juntas llevan su presupuesto compartido. Esta página explica qué datos usa la app, dónde se guardan y cómo borrarlos.</p>
+
+  <h2>Qué datos maneja la app</h2>
+  <ul>
+    <li>Los gastos que anotas o confirmas: valor, fecha, descripción, categoría, quién pagó y cómo se reparte.</li>
+    <li>Las categorías, sus topes mensuales, los gastos fijos, las deudas entre las dos personas y los pagos de esas deudas.</li>
+    <li>Los nombres que cada persona escribe para identificarse dentro del hogar.</li>
+    <li>Si lo activas, el texto de las notificaciones de compra de las apps de bancos que eliges, para proponer el gasto. Ese texto se procesa solo en el teléfono.</li>
+  </ul>
+
+  <h2>Dónde se guardan</h2>
+  <ul>
+    <li><strong>En cada teléfono</strong>, en la base de datos interna de la app.</li>
+    <li><strong>En el Google Drive de la cuenta del hogar</strong>, dentro de la carpeta privada de la app (<code>appDataFolder</code>). Esa carpeta no aparece entre tus archivos de Drive y solo esta app puede leerla. Se usa para que los dos teléfonos tengan la misma información y para recuperarla si reinstalas la app.</li>
+    <li>Si activas la sincronización por wifi, los teléfonos intercambian los cambios directamente en la red local, cifrados.</li>
+  </ul>
+  <p>Entre dos no tiene servidores propios, no usa servicios de analítica ni de publicidad, y no vende ni comparte datos con nadie.</p>
+
+  <h2>Uso de los datos de Google</h2>
+  <p>La app solo pide el permiso <code>https://www.googleapis.com/auth/drive.appdata</code>, que da acceso únicamente a su carpeta privada en Drive. No puede ver ni modificar ningún otro archivo de tu Drive, ni tu correo, contactos o calendario.</p>
+  <p>El uso y la transferencia de información recibida de las API de Google se ajustan a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado.</p>
+
+  <h2>Exportaciones</h2>
+  <p>Cuando exportas tus datos, la app crea un archivo en el teléfono y tú decides con quién o dónde compartirlo. La app no lo envía a ningún lado por su cuenta.</p>
+
+  <h2>Cómo borrar los datos</h2>
+  <ul>
+    <li>Desinstalar la app borra los datos del teléfono.</li>
+    <li>Para borrar la copia en Drive: abre Google Drive en la web, entra a <em>Configuración › Administrar aplicaciones</em>, busca Entre dos y elige <em>Eliminar datos ocultos de la aplicación</em>. También puedes quitarle el acceso en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+
+  <h2>Cambios</h2>
+  <p>Si esta política cambia, la nueva versión se publicará en esta misma página con su fecha de vigencia.</p>
+
+  <h2>Contacto</h2>
+  <p>Para cualquier pregunta, escribe al correo de asistencia que aparece en la pantalla de permiso de Google al iniciar sesión en la app.</p>
+
+  <footer><a href="index.html">Volver a Entre dos</a></footer>
+</main>
+</body>
+</html>
